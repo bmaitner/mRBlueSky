@@ -43,10 +43,10 @@ get_cloud_mean_ee <- function(sf_poly,
     
     sens_filtered <-
       filter_dates(collection = sens,
-                   datestart = "2000-01-01",
-                   datestop = paste(format(Sys.time(), "%Y-%m-%d"),sep = ""),
-                   daystart = 273,
-                   daystop = 366)
+                   datestart = datestart,
+                   datestop = datestop,
+                   daystart = daystart,
+                   daystop = daystop)
     
     
   # Convert the data into binary cloud data
